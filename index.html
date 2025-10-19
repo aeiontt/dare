@@ -1,1 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bamisile Oluwadamilare Emmanuel — Portfolio</title>
+  <meta name="description" content="Bamisile Oluwadamilare Emmanuel — learning web design. Portfolio, journey, projects, and contact." />
+  <meta name="author" content="Bamisile Oluwadamilare Emmanuel" />
+  <link rel="stylesheet" href="styles/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Personal logo" class="logo" />
+      <div class="brand-text">
+        <h1 class="site-title">Bamisile Oluwadamilare Emmanuel</h1>
+        <p class="tagline">Learning to build beautiful, accessible websites</p>
+      </div>
+    </div>
 
+    <nav class="main-nav" aria-label="Primary">
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">Journey & Projects</a>
+      <a href="skills.html">Skills</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-left">
+        <h2 class="eyebrow">Hi — I’m</h2>
+        <h1 class="hero-title">Bamisile Oluwadamilare Emmanuel</h1>
+        <p class="hero-sub">Aspiring web designer and student — building modern, accessible, and responsive websites while learning web fundamentals.</p>
+        <p class="hero-cta">
+          <a class="btn primary" href="about.html">See My Journey</a>
+          <a class="btn" href="projects.html">View Projects</a>
+        </p>
+      </div>
+
+      <aside class="hero-right" aria-labelledby="profile-heading">
+        <div class="profile-card">
+          <img src="images/profile.jpg" alt="Profile photo of Bamisile Oluwadamilare Emmanuel" class="profile-photo square" />
+          <h3 id="profile-heading">Bamisile O. Emmanuel</h3>
+          <p class="muted">Accounting student & aspiring front-end developer</p>
+          <div class="profile-links">
+            <a class="icon" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+            <a class="icon" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <!-- HIGHLIGHT CARDS (grid) -->
+    <section class="highlights" aria-labelledby="highlights-heading">
+      <h2 id="highlights-heading" class="sr-only">Highlights</h2>
+      <div class="card-grid">
+        <article class="card">
+          <h3>About Me</h3>
+          <p>Learning HTML, CSS and responsive design. I focus on accessible markup and clean layouts.</p>
+          <a class="link" href="about.html">Read more →</a>
+        </article>
+
+        <article class="card">
+          <h3>Projects</h3>
+          <p>Small websites, course assignments, and experiments — each project teaches me something new.</p>
+          <a class="link" href="projects.html">See projects →</a>
+        </article>
+
+        <article class="card">
+          <h3>Contact</h3>
+          <p>Want to collaborate or ask a question? Reach out — I’m open to feedback and opportunities.</p>
+          <a class="link" href="contact.html">Get in touch →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-left">
+      <p>&copy; <span id="year"></span> Bamisile Oluwadamilare Emmanuel</p>
+    </div>
+    <div class="footer-right">
+      <a href="https://facebook.com" target="_blank" rel="noopener"><img src="images/facebook.png" alt="Follow on Facebook" /></a>
+      <a href="https://twitter.com" target="_blank" rel="noopener"><img src="images/twitter.png" alt="Follow on Twitter" /></a>
+      <a href="https://instagram.com" target="_blank" rel="noopener"><img src="images/instagram.png" alt="Follow on Instagram" /></a>
+    </div>
+  </footer>
+
+  <script>
+    // small script for current year and minimal entrance animation trigger
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
